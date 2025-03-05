@@ -21,6 +21,7 @@ rds:DescribeDBInstances
 pricing:GetProducts (for fetching instance costs)
 
 🛠️ Setup
+
 Clone the repository
 git clone https://github.com/yourusername/aws-cost-estimator.git
 cd aws-cost-estimator
@@ -31,10 +32,14 @@ pip install -r requirements.txt
 Run the script
 python aws_cost_estimator.py
 
-📄 Output Example
-After running, the estimated monthly cost is saved in aws_cost_estimate.txt. Example output:
-AWS Cost Estimation (Mumbai Region)
 
+
+📄 Output Example
+
+After running, the estimated monthly cost is saved in aws_cost_estimate.txt. Example output:
+
+
+AWS Cost Estimation (Mumbai Region)
 EC2 Instances:
 - i-0abcdef1234567890 | t3.micro | $9.50/month
 
@@ -44,6 +49,9 @@ RDS Databases:
 Total Estimated Monthly Cost: $22.50
 
 
+
+
 ⚠️ Known Issues
+
 If your IAM role does not have pricing:GetProducts permissions, the script will return $0 for pricing.
 AWS Pricing API only works in us-east-1, so prices are fetched from there even if instances are in ap-south-1.
