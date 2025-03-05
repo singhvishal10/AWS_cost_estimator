@@ -23,8 +23,8 @@ pricing:GetProducts (for fetching instance costs)
 🛠️ Setup
 
 Clone the repository
-git clone https://github.com/yourusername/aws-cost-estimator.git
-cd aws-cost-estimator
+git clone https://github.com/singhvishal10/AWS_cost_estimator
+cd AWS_cost_estimator
 
 Install dependencies
 pip install -r requirements.txt
